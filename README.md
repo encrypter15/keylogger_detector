@@ -1,14 +1,24 @@
-# keylogger detector
-Cybersecurity tool for [add description].
+# Keylogger Detector
+
+## Overview
+The Keylogger Detector is a Python tool that scans running processes for potential keyloggers using the `psutil` library. It flags processes based on suspicious keywords in their names.
+
+## Author
+Rick Hayes
+
+## License
+MIT
+
+## Version
+2.73
 
 ## Requirements
 - Python 3.x
-
+- `psutil` library (`pip install psutil`)
+- Sufficient permissions to access process information
 
 ## Usage
-```bash
-python keylogger_detector.py --help
-```
+Run the script with the following argument:
 
-## Configuration
-Edit `config.ini` for custom settings.
+```bash
+python3 keylogger_detector.py [--config <CONFIG_FILE>]
